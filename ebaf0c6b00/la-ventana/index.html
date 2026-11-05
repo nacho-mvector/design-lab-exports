@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cortinas roller a medida en CABA y Provincia — Cortinados para vos</title>
+<meta name="description" content="Roller blackout, screen o estampado, medido en tu casa e instalado por el mismo equipo. Visita y presupuesto sin cargo en CABA y provincia de Buenos Aires.">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="./assets/fonts/fonts.css">
+<link rel="stylesheet" href="./build.css">
+<meta name="robots" content="noindex">
+<script>
+/* A route this preview does not have stops here and says so. */
+(function () {
+  var note = null, timer = 0;
+  document.addEventListener('click', function (event) {
+    var link = event.target && event.target.closest && event.target.closest('a[href^="/"]');
+    if (!link || link.getAttribute('href').indexOf('//') === 0) return;
+    event.preventDefault();
+    if (!note) {
+      note = document.createElement('div');
+      note.setAttribute('role', 'status');
+      note.setAttribute('data-showcase-note', '');
+      note.textContent = "Disponible en el sitio final";
+      note.style.cssText = 'position:fixed;left:50%;bottom:24px;z-index:2147483647;transform:translateX(-50%);max-width:calc(100vw - 32px);padding:10px 14px;border-radius:8px;background:#141414;color:#f2f2f2;font:14px/1.3 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.3);pointer-events:none';
+      document.body.appendChild(note);
+    }
+    note.hidden = false;
+    clearTimeout(timer);
+    timer = setTimeout(function () { note.hidden = true; }, 2400);
+  }, true);
+})();
+</script>
+</head>
+<body class="bg-bg font-body text-body text-ink antialiased">
+
+<!-- NAV: below 1024px the header WhatsApp button would push the row past
+     the viewport, so it waits for lg; the floating button carries it there. -->
+<header data-block="nav" class="z-20 border-b border-line bg-bg md:sticky md:top-0">
+  <div class="mx-auto flex max-w-page flex-wrap items-center gap-x-8 gap-y-2 px-gutter py-3 md:h-nav md:flex-nowrap md:py-0">
+    <a href="/" class="flex items-center gap-2.5 text-ink">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="title-wide text-body">Cortinados para vos</span>
+    </a>
+    <nav class="order-3 w-full md:order-none md:w-auto md:flex-1">
+      <ul class="flex justify-between gap-5 overflow-x-auto text-small font-medium text-ink-dim [scrollbar-width:none] md:justify-end md:gap-9 lg:justify-center">
+        <li><a href="#telas" class="whitespace-nowrap transition-colors hover:text-ink">Telas</a></li>
+        <li><a href="#sistemas" class="whitespace-nowrap transition-colors hover:text-ink">Sistemas</a></li>
+        <li><a href="#como-trabajamos" class="whitespace-nowrap transition-colors hover:text-ink">Cómo trabajamos</a></li>
+        <!-- <li><a href="#preguntas" class="whitespace-nowrap transition-colors hover:text-ink">Preguntas</a></li> -->
+      </ul>
+    </nav>
+    <a href="/consulta/whatsapp" class="btn btn-accent ml-auto hidden md:ml-0 lg:inline-flex">Escribinos por WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO: a drawn window in the normal flow, so the page scrolls from the first
+     pixel. The first scroll drops the blind in one run, on its own clock, and
+     never holds the page; at rest the window is open and every string is readable. -->
+<section data-block="hero" class="relative h-viewport md:h-stage">
+  <div class="stage h-full" data-stage data-rest>
+    <div class="frame h-full rounded-none border-x-0 border-t-0">
+      <div class="tube"></div>
+      <div class="glass glass-hero">
+
+        <div class="absolute inset-0 z-1 flex flex-col items-center justify-center px-gutter pb-6 text-center">
+          <p class="eyebrow text-accent-ink">Cortinas roller a medida · CABA y Provincia</p>
+          <h1 class="display mt-5 max-w-copy text-display text-balance text-ink md:mt-6">Tu roller a medida, medido e instalado por el mismo equipo.</h1>
+          <p class="mt-5 max-w-prose text-lead text-pretty text-ink-dim md:mt-7">Blackout, screen o estampado. Vamos a tu casa con el muestrario, medimos cada ventana y la instalamos. Presupuesto sin cargo.</p>
+          <div class="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center md:mt-9">
+            <a href="#consulta" class="btn btn-accent">Armá tu consulta en 3 pasos</a>
+            <a href="/consulta/whatsapp" class="btn btn-ghost">Escribinos por WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="blind-well" aria-hidden="true">
+          <div class="blind">
+            <div class="blind-copy flex flex-col items-center justify-center px-gutter pb-6 text-center">
+              <p class="eyebrow text-accent-lit">Cortinas roller a medida · CABA y Provincia</p>
+              <p class="display mt-5 max-w-copy text-display text-balance text-on-blind md:mt-6">Tu roller a medida, medido e instalado por el mismo equipo.</p>
+              <p class="mt-5 max-w-prose text-lead text-pretty text-on-blind-dim md:mt-7">Blackout, screen o estampado. Vamos a tu casa con el muestrario, medimos cada ventana y la instalamos. Presupuesto sin cargo.</p>
+              <div class="mt-7 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center md:mt-9">
+                <span class="btn btn-accent">Armá tu consulta en 3 pasos</span>
+                <span class="btn btn-on-blind">Escribinos por WhatsApp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="chain" data-chain><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF: four plain claims, no counts beyond the one the set makes. -->
+<section data-block="proof" class="border-b border-line bg-bg">
+  <ul class="mx-auto grid max-w-page grid-cols-2 px-gutter md:grid-cols-4">
+    <li class="title-wide border-line py-6 pr-4 text-body text-ink md:border-r md:py-9 md:pr-8 flex items-center gap-3 md:gap-4"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-proof shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.6 13.9-1.1 7.6 4.5-2.6 4.5 2.6-1.1-7.6"/></svg><span>Más de 40 años en el rubro</span></li>
+    <li class="title-wide border-line py-6 pl-4 text-body text-ink max-md:border-l md:border-r md:px-8 md:py-9 flex items-center gap-3 md:gap-4"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-proof shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="m9 14.5 2.2 2.2L15.2 12.6"/></svg><span>Visita y presupuesto sin cargo</span></li>
+    <li class="title-wide border-t border-line py-6 pr-4 text-body text-ink md:border-t-0 md:border-r md:px-8 md:py-9 flex items-center gap-3 md:gap-4"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-proof shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.3 7-11.5a7 7 0 1 0-14 0c0 5.2 7 11.5 7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>CABA y provincia de Buenos Aires</span></li>
+    <li class="title-wide border-t border-line py-6 pl-4 text-body text-ink max-md:border-l md:border-t-0 md:px-8 md:py-9 flex items-center gap-3 md:gap-4"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-proof shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13.5V12a8 8 0 0 1 16 0v1.5"/><rect x="2.8" y="13" width="4.4" height="6.5" rx="1.6"/><rect x="16.8" y="13" width="4.4" height="6.5" rx="1.6"/><path d="M19 19.5c0 1.6-2 2.3-4.5 2.3"/></svg><span>Posventa y soporte técnico</span></li>
+  </ul>
+</section>
+
+<!-- SPEC: one drawn window, repainted per fabric; three level bars. -->
+<section id="telas" data-block="spec" class="pt-band">
+  <div class="mx-auto max-w-page px-gutter">
+    <h2 id="telas-titulo" class="section-title max-w-4xl text-section text-balance text-ink">¿Blackout, screen o estampado? Depende de lo que le pidas a la ventana.</h2>
+    <p class="mt-5 max-w-prose text-lead text-ink-dim">Elegí una tela y mirá cómo cambia la misma ventana.</p>
+
+    <div class="mt-10 grid gap-8 md:mt-14 md:grid-cols-12 md:items-start md:gap-gap">
+      <!-- Tabs: on desktop each carries its own line, so every fabric reads
+           at rest; on a phone the three sit in one row and the selected
+           fabric's line is printed beneath them. -->
+      <div class="md:order-2 md:col-span-5">
+        <div role="tablist" aria-labelledby="telas-titulo" class="grid grid-cols-3 gap-2 md:flex md:flex-col md:gap-3">
+          <button type="button" role="tab" id="tab-blackout" aria-selected="true" aria-controls="fabric-panel" data-fabric-tab="blackout" data-levels="5,0,5" class="tab flex flex-col items-center justify-center rounded-frame bg-window/40 px-2 py-2.5 text-center transition-colors md:items-start md:p-5 md:text-left">
+            <span class="title-wide block text-small text-ink md:text-title">Blackout</span>
+            <span class="mt-2 block text-small text-ink-dim max-md:sr-only" data-fabric-line>Corta la luz por completo. Para dormitorios y para dormir de día.</span>
+          </button>
+          <button type="button" role="tab" id="tab-screen" aria-selected="false" aria-controls="fabric-panel" tabindex="-1" data-fabric-tab="screen" data-levels="2,4,4" class="tab flex flex-col items-center justify-center rounded-frame bg-window/40 px-2 py-2.5 text-center transition-colors md:items-start md:p-5 md:text-left">
+            <span class="title-wide block text-small text-ink md:text-title">Screen</span>
+            <span class="mt-2 block text-small text-ink-dim max-md:sr-only" data-fabric-line>Filtra el sol y deja ver afuera. Para livings, estudios y cocinas.</span>
+          </button>
+          <button type="button" role="tab" id="tab-estampado" aria-selected="false" aria-controls="fabric-panel" tabindex="-1" data-fabric-tab="estampado" data-levels="3,1,3" class="tab flex flex-col items-center justify-center rounded-frame bg-window/40 px-2 py-2.5 text-center transition-colors md:items-start md:p-5 md:text-left">
+            <span class="title-wide block text-small text-ink md:text-title">Estampado</span>
+            <span class="mt-2 block text-small text-ink-dim max-md:sr-only" data-fabric-line>Poliéster con diseño. Da privacidad y viste el ambiente.</span>
+          </button>
+        </div>
+        <p class="mt-4 min-h-[calc(var(--text-small--line-height)*var(--text-small)*2)] text-small text-ink-dim md:hidden" aria-hidden="true" data-fabric-caption>Corta la luz por completo. Para dormitorios y para dormir de día.</p>
+      </div>
+
+      <div id="fabric-panel" role="tabpanel" aria-labelledby="tab-blackout" class="md:order-1 md:col-span-7">
+        <div class="room aspect-scene rounded-frame p-room pb-floor" data-room>
+          <div class="frame frame-sm h-full" data-fabric-window>
+            <div class="tube"></div>
+            <div class="glass glass-outside">
+              <div class="fabric-well" data-fabric-well>
+                <div class="fabric fabric-blackout" data-fabric></div>
+              </div>
+            </div>
+            <div class="chain"><span></span></div>
+          </div>
+          <div class="sunpatch" aria-hidden="true"></div>
+        </div>
+
+        <dl class="mt-7 grid gap-4 sm:grid-cols-3 sm:gap-6">
+          <div>
+            <dt class="text-small font-semibold text-ink">Oscurece</dt>
+            <dd class="mt-2 flex gap-1.5" data-meter="0">
+              <span class="pip" style="--i:0" data-on></span><span class="pip" style="--i:1" data-on></span><span class="pip" style="--i:2" data-on></span><span class="pip" style="--i:3" data-on></span><span class="pip" style="--i:4" data-on></span>
+            </dd>
+          </div>
+          <div>
+            <dt class="text-small font-semibold text-ink">Deja ver afuera</dt>
+            <dd class="mt-2 flex gap-1.5" data-meter="1">
+              <span class="pip" style="--i:0"></span><span class="pip" style="--i:1"></span><span class="pip" style="--i:2"></span><span class="pip" style="--i:3"></span><span class="pip" style="--i:4"></span>
+            </dd>
+          </div>
+          <div>
+            <dt class="text-small font-semibold text-ink">Filtra el sol</dt>
+            <dd class="mt-2 flex gap-1.5" data-meter="2">
+              <span class="pip" style="--i:0" data-on></span><span class="pip" style="--i:1" data-on></span><span class="pip" style="--i:2" data-on></span><span class="pip" style="--i:3" data-on></span><span class="pip" style="--i:4" data-on></span>
+            </dd>
+          </div>
+        </dl>
+        <p class="mt-5 max-w-prose text-small text-ink-dim">Cada tela viene en varios colores: los ves en el muestrario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE: what changes the result. One technical drawing of the
+     window, its three callouts answering the list beside it. -->
+<section data-block="feature" aria-labelledby="resultado-titulo" class="py-band">
+  <svg class="hidden" aria-hidden="true">
+    <symbol id="i-measure" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 16.5 16.5 3 21 7.5 7.5 21Z" />
+      <path d="m7.5 12 2 2m1-5 2 2m1-5 2 2" />
+    </symbol>
+    <symbol id="i-fabric" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 3.5h7.5v17H4Z" />
+      <path d="m11.5 6.5 4.6-1.6 4.4 12.6-9 3" />
+    </symbol>
+    <symbol id="i-bracket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 3.5V15a5 5 0 0 0 5 5h9.5" />
+      <circle cx="14" cy="10" r="3.2" />
+      <path d="M8.5 7h0m0 7h0" />
+    </symbol>
+  </svg>
+  <div class="mx-auto grid max-w-page items-center gap-10 px-gutter lg:grid-cols-12 lg:gap-gap">
+    <div class="lg:col-span-5">
+      <h2 id="resultado-titulo" class="section-title text-section text-balance text-ink">Lo que cambia el resultado</h2>
+      <ol class="mt-10 grid gap-8 md:mt-12">
+        <li class="flex gap-5">
+          <span class="marker"><svg aria-hidden="true"><use href="#i-measure" /></svg></span>
+          <div>
+            <h3 class="title-wide text-title text-ink">La medida</h3>
+            <p class="mt-2 max-w-narrow text-body text-ink-dim">Medimos cada ventana en tu casa. Un roller mal medido deja pasar luz por los costados.</p>
+          </div>
+        </li>
+        <li class="flex gap-5">
+          <span class="marker"><svg aria-hidden="true"><use href="#i-fabric" /></svg></span>
+          <div>
+            <h3 class="title-wide text-title text-ink">La tela</h3>
+            <p class="mt-2 max-w-narrow text-body text-ink-dim">La elegís con el muestrario en la mano, con la luz de tu ambiente.</p>
+          </div>
+        </li>
+        <li class="flex gap-5">
+          <span class="marker"><svg aria-hidden="true"><use href="#i-bracket" /></svg></span>
+          <div>
+            <h3 class="title-wide text-title text-ink">La colocación</h3>
+            <p class="mt-2 max-w-narrow text-body text-ink-dim">Instala el mismo equipo que midió, y te seguimos acompañando después de la entrega.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <figure class="lg:col-span-7" aria-hidden="true">
+      <svg viewBox="0 0 640 560" class="h-auto w-full" fill="none">
+        <defs>
+          <linearGradient id="drawing-tube" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" class="drawing-tube-lit" />
+            <stop offset="0.45" class="drawing-tube-mid" />
+            <stop offset="1" class="drawing-tube-deep" />
+          </linearGradient>
+        </defs>
+        <!-- width and height, as measured -->
+        <g class="stroke-ink" stroke-width="1.5" stroke-linecap="round">
+          <path d="M110 40h420M110 30v20M530 30v20M120 34l-10 6 10 6M520 34l10 6-10 6" />
+          <path d="M62 80v400M52 80h20M52 480h20M56 92l6-12 6 12M56 468l6 12 6-12" />
+        </g>
+        <!-- the window: frame in the mullion colour, cream glass, its grid -->
+        <rect x="104" y="74" width="432" height="412" rx="3" class="fill-mullion stroke-mullion-edge" stroke-width="1.5" />
+        <rect x="120" y="90" width="400" height="380" class="fill-window" />
+        <g class="stroke-mullion" stroke-width="5">
+          <path d="M187 90v380M253 90v380M320 90v380M387 90v380M453 90v380M120 217h400M120 343h400" />
+        </g>
+        <!-- the blind, cut to the window -->
+        <rect x="120" y="108" width="400" height="196" class="fill-blind" />
+        <rect x="120" y="300" width="400" height="10" rx="3" class="fill-blind-deep" />
+        <rect x="114" y="90" width="412" height="20" rx="3" fill="url(#drawing-tube)" />
+        <path d="M498 112v118M506 112v118" class="stroke-chain" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" />
+        <circle cx="502" cy="238" r="5" class="fill-chain" />
+        <!-- the bracket, close up -->
+        <path d="M522 100 566 128" class="stroke-ink" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round" />
+        <circle cx="590" cy="160" r="44" class="fill-bg stroke-ink" stroke-width="1.5" />
+        <path d="M566 132h20v52h-20" class="stroke-ink" stroke-width="2" stroke-linejoin="round" />
+        <circle cx="604" cy="158" r="14" fill="url(#drawing-tube)" />
+        <circle cx="576" cy="144" r="2.5" class="fill-ink" />
+        <circle cx="576" cy="172" r="2.5" class="fill-ink" />
+        <!-- the swatch fan: estampado, screen, blackout -->
+        <g data-fan style="--fan:0.15">
+          <g class="drawing-swatch" style="--a:-1"><rect x="160" y="360" width="120" height="168" rx="3" class="fill-print-ground stroke-mullion-edge" stroke-width="1.5" /><circle cx="196" cy="404" r="16" class="fill-print-motif" /><circle cx="244" cy="470" r="11" class="fill-print-motif" /><circle cx="250" cy="396" r="7" class="fill-print" /></g>
+          <g class="drawing-swatch" style="--a:-0.15"><rect x="170" y="352" width="120" height="168" rx="3" class="fill-screen stroke-mullion-edge" stroke-width="1.5" /></g>
+          <g class="drawing-swatch" style="--a:0.8"><rect x="180" y="348" width="120" height="168" rx="3" class="fill-blind" /><rect x="180" y="506" width="120" height="10" class="fill-blind-deep" /></g>
+        </g>
+        <!-- callouts that answer the list -->
+        <g class="text-ink">
+          <circle cx="320" cy="40" r="20" class="fill-window stroke-ink" stroke-width="1.5" />
+          <use href="#i-measure" x="308" y="28" width="24" height="24" />
+          <circle cx="356" cy="420" r="20" class="fill-window stroke-ink" stroke-width="1.5" />
+          <use href="#i-fabric" x="344" y="408" width="24" height="24" />
+          <circle cx="590" cy="232" r="20" class="fill-window stroke-ink" stroke-width="1.5" />
+          <use href="#i-bracket" x="578" y="220" width="24" height="24" />
+        </g>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<!-- PRODUCT: the five systems, drawn in the hero's frame, labelled beneath. -->
+<section id="sistemas" data-block="product" class="bg-window/45 py-band">
+  <div class="mx-auto max-w-page px-gutter">
+    <h2 class="section-title text-center text-section text-ink">Sistemas de roller</h2>
+    <ul class="mt-10 grid grid-cols-2 gap-x-4 gap-y-10 md:mt-14 md:grid-cols-5 md:gap-x-gap">
+      <li class="sys sys-blackout" tabindex="0">
+        <div class="frame frame-sm aspect-frame" aria-hidden="true">
+          <div class="tube"></div>
+          <div class="glass glass-outside"><div class="fabric-well"><div class="fabric fabric-blackout"></div></div></div>
+          <div class="chain"><span></span></div>
+        </div>
+        <h3 class="title-wide mt-5 text-title text-ink">Roller blackout</h3>
+        <p class="mt-1.5 text-small text-ink-dim">Oscuridad total y privacidad.</p>
+      </li>
+      <li class="sys sys-screen" tabindex="0">
+        <div class="frame frame-sm aspect-frame" aria-hidden="true">
+          <div class="tube"></div>
+          <div class="glass glass-outside"><div class="fabric-well"><div class="fabric fabric-screen"></div></div></div>
+          <div class="chain"><span></span></div>
+        </div>
+        <h3 class="title-wide mt-5 text-title text-ink">Roller screen</h3>
+        <p class="mt-1.5 text-small text-ink-dim">Control solar con vista al exterior.</p>
+      </li>
+      <li class="sys sys-estampado" tabindex="0">
+        <div class="frame frame-sm aspect-frame" aria-hidden="true">
+          <div class="tube"></div>
+          <div class="glass glass-outside"><div class="fabric-well"><div class="fabric fabric-estampado"></div></div></div>
+          <div class="chain"><span></span></div>
+        </div>
+        <h3 class="title-wide mt-5 text-title text-ink">Roller estampado</h3>
+        <p class="mt-1.5 text-small text-ink-dim">Privacidad con diseño.</p>
+      </li>
+      <li class="sys sys-doble" tabindex="0">
+        <div class="frame frame-sm aspect-frame" aria-hidden="true">
+          <div class="tube"></div>
+          <!-- two rollers on one window: the screen hangs, the blackout waits above it -->
+          <div class="glass glass-outside">
+            <div class="fabric-well"><div class="fabric fabric-screen"></div></div>
+            <div class="fabric-well fabric-well-front"><div class="fabric fabric-blackout"></div></div>
+          </div>
+          <div class="chain"><span></span></div>
+        </div>
+        <h3 class="title-wide mt-5 text-title text-ink">Roller doble</h3>
+        <p class="mt-1.5 text-small text-ink-dim">Blackout y screen en la misma ventana.</p>
+      </li>
+      <li class="sys sys-motor max-md:col-span-2 max-md:mx-auto max-md:w-1/2" tabindex="0">
+        <div class="relative" aria-hidden="true">
+          <div class="frame frame-sm aspect-frame">
+            <div class="tube"></div>
+            <div class="glass glass-outside"><div class="fabric-well"><div class="fabric fabric-screen"></div></div></div>
+            <div class="chain"><span></span></div>
+          </div>
+          <!-- the wall switch of the motorised version -->
+          <span class="switch max-md:hidden">
+            <span></span><span></span>
+          </span>
+        </div>
+        <h3 class="title-wide mt-5 text-title text-ink">Cadena o motor</h3>
+        <p class="mt-1.5 text-small text-ink-dim">Manual a cadena, o motorizado con control o tecla.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESS: a sticky title; a chain rail whose weight runs with the reader. -->
+<section id="como-trabajamos" data-block="process" class="py-band">
+  <div class="mx-auto grid max-w-page gap-10 px-gutter md:grid-cols-12 md:gap-gap">
+    <div class="md:col-span-5">
+      <h2 class="section-title text-section text-balance text-ink md:sticky md:top-[calc(var(--spacing-nav)+var(--spacing-gap)*2)]">De la consulta a la cortina instalada</h2>
+    </div>
+    <div class="relative pl-10 md:col-span-7 md:pl-16" data-process>
+      <div class="rail left-0 md:left-2" data-rail aria-hidden="true"><span class="rail-weight"></span></div>
+      <ol class="grid gap-12 md:gap-20">
+        <li class="grid grid-cols-[auto_1fr] items-baseline gap-x-5 md:gap-x-8">
+          <span class="display text-step text-ink" data-tabular>01</span>
+          <div>
+            <h3 class="title-wide text-title text-ink">Escribinos</h3>
+            <p class="mt-2 text-body text-ink-dim">Contanos cuántas ventanas y en qué zona estás.</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[auto_1fr] items-baseline gap-x-5 md:gap-x-8">
+          <span class="display text-step text-ink" data-tabular>02</span>
+          <div>
+            <h3 class="title-wide text-title text-ink">Vamos con el muestrario</h3>
+            <p class="mt-2 text-body text-ink-dim">Medimos cada ventana y te asesoramos ahí mismo.</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[auto_1fr] items-baseline gap-x-5 md:gap-x-8">
+          <span class="display text-step text-ink" data-tabular>03</span>
+          <div>
+            <h3 class="title-wide text-title text-ink">Te pasamos el presupuesto</h3>
+            <p class="mt-2 text-body text-ink-dim">Por escrito, con la tela y el mecanismo elegidos.</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[auto_1fr] items-baseline gap-x-5 md:gap-x-8">
+          <span class="display text-step text-ink" data-tabular>04</span>
+          <div>
+            <h3 class="title-wide text-title text-ink">Instalamos</h3>
+            <p class="mt-2 text-body text-ink-dim">Y te seguimos acompañando después de la entrega.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CTA: the three-step consulta, in the page, ending in WhatsApp. -->
+<section id="consulta" data-block="cta" class="px-gutter">
+  <div class="frame mx-auto max-w-page">
+    <div class="tube"></div>
+    <div class="glass glass-hero"></div>
+    <form class="relative z-1 mx-auto max-w-copy px-5 pb-10 pt-[calc(var(--spacing-tube)+var(--spacing-gap)*2)] md:px-10 md:pb-14" data-quote>
+      <div class="text-center">
+        <h2 class="section-title text-section text-ink">Armá tu consulta</h2>
+        <p class="mt-4 text-lead text-ink-dim">Tres preguntas y te escribimos por WhatsApp.</p>
+      </div>
+
+      <div class="mx-auto mt-8 grid max-w-narrow grid-cols-3 gap-1.5" aria-hidden="true">
+        <span class="h-1.5 overflow-hidden rounded-frame bg-ink/10"><span class="progress-fill block h-full bg-ink" data-progress="0"></span></span>
+        <span class="h-1.5 overflow-hidden rounded-frame bg-ink/10"><span class="progress-fill block h-full bg-ink" data-progress="1"></span></span>
+        <span class="h-1.5 overflow-hidden rounded-frame bg-ink/10"><span class="progress-fill block h-full bg-ink" data-progress="2"></span></span>
+      </div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <fieldset class="step rounded-frame p-5 transition-colors md:p-6" data-step="0" data-state="active">
+          <legend class="float-left w-full"><span class="eyebrow block text-accent-ink">Paso 1 de 3</span><span class="title-wide mt-2 block text-title text-ink">¿Qué tela te interesa?</span></legend>
+          <div class="clear-both flex flex-wrap gap-2 pt-5">
+            <label><input type="radio" name="tela" value="Blackout" class="sr-only"><span class="option">Blackout</span></label>
+            <label><input type="radio" name="tela" value="Screen" class="sr-only"><span class="option">Screen</span></label>
+            <label><input type="radio" name="tela" value="Estampado" class="sr-only"><span class="option">Estampado</span></label>
+            <label><input type="radio" name="tela" value="No sé, asesorame" class="sr-only"><span class="option">No sé, asesorame</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="step rounded-frame p-5 transition-colors md:p-6" data-step="1">
+          <legend class="float-left w-full"><span class="eyebrow block text-accent-ink">Paso 2 de 3</span><span class="title-wide mt-2 block text-title text-ink">¿Cuántas ventanas?</span></legend>
+          <div class="clear-both flex flex-wrap gap-2 pt-5">
+            <label><input type="radio" name="ventanas" value="1" class="sr-only"><span class="option" data-tabular>1</span></label>
+            <label><input type="radio" name="ventanas" value="2 o 3" class="sr-only"><span class="option">2 o 3</span></label>
+            <label><input type="radio" name="ventanas" value="4 o más" class="sr-only"><span class="option">4 o más</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="step rounded-frame p-5 transition-colors md:p-6" data-step="2">
+          <legend class="float-left w-full"><span class="eyebrow block text-accent-ink">Paso 3 de 3</span><span class="title-wide mt-2 block text-title text-ink">¿Dónde estás?</span></legend>
+          <div class="clear-both flex flex-wrap gap-2 pt-5">
+            <label><input type="radio" name="zona" value="CABA" class="sr-only"><span class="option">CABA</span></label>
+            <label><input type="radio" name="zona" value="Zona Norte" class="sr-only"><span class="option">Zona Norte</span></label>
+            <label><input type="radio" name="zona" value="Zona Oeste" class="sr-only"><span class="option">Zona Oeste</span></label>
+            <label><input type="radio" name="zona" value="Zona Sur" class="sr-only"><span class="option">Zona Sur</span></label>
+            <label><input type="radio" name="zona" value="Otra localidad de la provincia" class="sr-only"><span class="option">Otra localidad de la provincia</span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="mt-8 flex flex-col items-center gap-4 text-center">
+        <a href="/consulta/whatsapp" class="btn btn-accent w-full sm:w-auto" data-send>Enviar por WhatsApp</a>
+        <p class="max-w-prose text-small text-ink-dim">Es una consulta, no una compra. El precio te lo damos después de medir.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- PROOF: installs carousel. The client has no roller photographs yet,
+     so each position of the `instalaciones` slot (4:5, 800 x 1000, from
+     ./assets/photo-instalaciones-<n>.webp when it arrives) is a graded
+     placeholder carrying the set's alt. -->
+<section data-block="proof" class="overflow-hidden py-band">
+  <div class="mx-auto max-w-page px-gutter">
+    <h2 class="section-title text-section text-ink">Cortinas que ya instalamos</h2>
+  </div>
+  <div class="mx-auto mt-10 max-w-page md:mt-12">
+    <ul class="track flex gap-4 overflow-x-auto px-gutter pb-2 md:gap-6" data-track>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-1.webp" width="1152" height="1440" alt="Cortina roller blackout instalada en un dormitorio" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Cortina roller blackout instalada en un dormitorio</figcaption>
+        </figure>
+      </li>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-2.webp" width="1152" height="1440" alt="Cortina roller screen en el ventanal de un living" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Cortina roller screen en el ventanal de un living</figcaption>
+        </figure>
+      </li>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-3.webp" width="1152" height="1440" alt="Roller screen en la ventana de una cocina" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Roller screen en la ventana de una cocina</figcaption>
+        </figure>
+      </li>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-4.webp" width="1152" height="1440" alt="Roller blackout bajo, de noche, en un dormitorio" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Roller blackout bajo, de noche, en un dormitorio</figcaption>
+        </figure>
+      </li>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-5.webp" width="1152" height="1440" alt="Cortina roller estampada en un cuarto" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Cortina roller estampada en un cuarto</figcaption>
+        </figure>
+      </li>
+      <li class="w-slide shrink-0">
+        <figure>
+          <img data-photo="instalaciones" src="./assets/photo-instalaciones-6.webp" width="1152" height="1440" alt="Dos rollers screen en un estudio" loading="lazy" decoding="async" class="aspect-photo w-full rounded-frame object-cover">
+          <figcaption class="mt-3 text-small text-ink-dim" aria-hidden="true">Dos rollers screen en un estudio</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ: every answer is short enough to stand open. -->
+<!-- Off the page, kept to bring back.
+<section id="preguntas" data-block="faq" class="border-t border-line py-band">
+  <div class="mx-auto max-w-page px-gutter">
+    <h2 class="section-title text-center text-section text-ink">Preguntas frecuentes</h2>
+    <dl class="mx-auto mt-10 grid max-w-5xl gap-x-gap gap-y-9 md:mt-14 md:grid-cols-2">
+      <div class="border-t border-line pt-5">
+        <dt class="title-wide text-title text-ink">¿Cuánto cuesta la visita?</dt>
+        <dd class="mt-2 text-body text-ink-dim">Nada. La visita y el presupuesto son sin cargo.</dd>
+      </div>
+      <div class="border-t border-line pt-5">
+        <dt class="title-wide text-title text-ink">¿Se puede motorizar?</dt>
+        <dd class="mt-2 text-body text-ink-dim">Sí, con control remoto o con tecla de pared.</dd>
+      </div>
+      <div class="border-t border-line pt-5">
+        <dt class="title-wide text-title text-ink">¿Llegan a mi zona?</dt>
+        <dd class="mt-2 text-body text-ink-dim">Sí. Trabajamos en CABA y en toda la provincia de Buenos Aires. Escribinos con tu barrio o localidad.</dd>
+      </div>
+      <div class="border-t border-line pt-5">
+        <dt class="title-wide text-title text-ink">¿Y después de instalar?</dt>
+        <dd class="mt-2 text-body text-ink-dim">Seguimos acompañándote después de la entrega, para asegurarnos de que todo funcione y se vea como esperabas.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+-->
+
+</main>
+
+<!-- FOOTER: the window again, blind rolled up, then the line. On a phone
+     the bottom pad clears the floating WhatsApp button. -->
+<footer data-block="footer" class="px-gutter pb-[calc(var(--spacing-fab)+var(--spacing-fab-offset)*2)] md:pb-8">
+  <div class="frame mx-auto max-w-page">
+    <div class="tube"></div>
+    <div class="glass glass-hero"></div>
+    <div class="relative z-1 flex flex-col items-center px-5 pb-16 pt-[calc(var(--spacing-tube)+var(--spacing-band))] text-center md:pb-24">
+      <h2 class="display max-w-4xl text-close text-balance text-ink">Tu ventana, resuelta en una visita.</h2>
+      <p class="mt-6 max-w-prose text-lead text-ink-dim">Medimos, te asesoramos y te pasamos el presupuesto sin cargo.</p>
+      <div class="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+        <a href="/consulta/whatsapp" class="btn btn-accent">Escribinos por WhatsApp</a>
+        <a href="/consulta/llamar" class="btn btn-ghost">Llamanos</a>
+      </div>
+    </div>
+    <div class="chain"><span></span></div>
+  </div>
+  <div class="mx-auto mt-8 flex max-w-page items-center gap-3 text-small text-ink-dim">
+    <span class="brand-mark shrink-0" aria-hidden="true"></span>
+    <p>Cortinados para vos · CABA y provincia de Buenos Aires</p>
+  </div>
+</footer>
+
+<!-- The floating WhatsApp button, bottom right, above the safe area. -->
+<a href="/consulta/whatsapp" class="wa-pulse fab print:hidden" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+    <path fill="currentColor" d="M9.2 7.7c-.2-.4-.4-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-1.8-.9c-.3-.1-.5-.1-.7.1l-.8 1c-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.8-2Z" />
+  </svg>
+</a>
+
+<script type="module">
+  import { animate, onScroll, createTimeline } from './assets/anime.esm.min.js'
+
+  // prefers-reduced-motion: every scrub, swap and advance below collapses
+  // to its end state; the window stays open and nothing auto-plays.
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
+  const root = getComputedStyle(document.documentElement)
+  const ms = (name) => parseFloat(root.getPropertyValue(name)) || 0
+
+  /* ---- Hero: past a small scroll the blind drops in one run, whatever
+     the reader's speed; back at the top it lifts. One tug on load. ---- */
+  const hero = document.querySelector('[data-block="hero"]')
+  const stage = document.querySelector('[data-stage]')
+  if (!reduce && hero && stage) {
+    const blind = { p: 0 }
+    const tug = { v: 0 }
+    // The blind well is hidden only while the blind is fully rolled up.
+    const lowered = () => stage.toggleAttribute('data-rest', blind.p + tug.v < 0.001)
+    const trip = 24
+    let down = false
+    let run = null
+    const drop = () => {
+      const past = window.scrollY > trip
+      if (past === down) return
+      down = past
+      run?.pause()
+      run = animate(blind, {
+        p: past ? 1 : 0,
+        ease: 'inOutCubic',
+        duration: ms('--motion-blind'),
+        onUpdate: () => { stage.style.setProperty('--blind', blind.p.toFixed(4)); lowered() },
+      })
+    }
+    window.addEventListener('scroll', drop, { passive: true })
+    drop()
+    animate(tug, {
+      v: 0.06,
+      delay: 450,
+      duration: ms('--motion-tug'),
+      ease: 'inOutSine',
+      alternate: true,
+      loop: 1,
+      onUpdate: () => { stage.style.setProperty('--tug', tug.v.toFixed(4)); lowered() },
+    })
+  }
+
+  /* ---- Fabric switcher: the blind rolls up, the fabric changes, it
+     drops again; the room darkens, the sun patch and bars follow. ---- */
+  const tabs = [...document.querySelectorAll('[data-fabric-tab]')]
+  const room = document.querySelector('[data-room]')
+  const fabric = document.querySelector('[data-fabric]')
+  const panel = document.getElementById('fabric-panel')
+  const meters = [...document.querySelectorAll('[data-meter]')]
+  const caption = document.querySelector('[data-fabric-caption]')
+  const paint = (tab) => {
+    const [dark, view, sun] = tab.dataset.levels.split(',').map(Number)
+    fabric.className = `fabric fabric-${tab.dataset.fabricTab}`
+    room.style.setProperty('--dark', dark)
+    room.style.setProperty('--view', view)
+    room.style.setProperty('--sun', sun)
+    ;[dark, view, sun].forEach((level, m) => {
+      meters[m].querySelectorAll('.pip').forEach((pip, i) => pip.toggleAttribute('data-on', i < level))
+    })
+  }
+  const select = (tab) => {
+    if (tab.getAttribute('aria-selected') === 'true') return
+    tabs.forEach((t) => {
+      const on = t === tab
+      t.setAttribute('aria-selected', String(on))
+      t.tabIndex = on ? 0 : -1
+    })
+    panel.setAttribute('aria-labelledby', tab.id)
+    if (caption) caption.textContent = tab.querySelector('[data-fabric-line]').textContent
+    if (reduce) return paint(tab)
+    createTimeline()
+      .add(fabric, { translateY: '-100%', duration: ms('--motion-swap'), ease: 'in(2)', onComplete: () => paint(tab) })
+      .add(fabric, { translateY: ['-100%', '0%'], duration: ms('--motion-drop'), ease: 'outExpo' })
+  }
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => select(tab))
+    tab.addEventListener('keydown', (e) => {
+      const d = e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -1 : 0
+      if (!d) return
+      e.preventDefault()
+      const next = tabs[(i + d + tabs.length) % tabs.length]
+      next.focus()
+      select(next)
+    })
+  })
+  if (room && tabs[0]) {
+    const [dark, view, sun] = tabs[0].dataset.levels.split(',').map(Number)
+    room.style.setProperty('--dark', dark)
+    room.style.setProperty('--view', view)
+    room.style.setProperty('--sun', sun)
+  }
+
+  /* ---- Why: the drawing's sample book fans open when in view. ------- */
+  const fan = document.querySelector('[data-fan]')
+  if (fan && !reduce) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        fan.style.setProperty('--fan', 1)
+        io.unobserve(entry.target)
+      })
+    }, { threshold: 0.4 })
+    io.observe(fan)
+  } else if (fan) {
+    fan.style.setProperty('--fan', 1)
+  }
+
+  /* ---- Process: the chain's weight runs down with the reader. ------- */
+  const process = document.querySelector('[data-process]')
+  const rail = document.querySelector('[data-rail]')
+  if (!reduce && process && rail) {
+    const run = { p: 0 }
+    animate(run, {
+      p: [0, 1],
+      ease: 'linear',
+      duration: 1000,
+      onUpdate: () => rail.style.setProperty('--run', run.p.toFixed(4)),
+      autoplay: onScroll({ target: process, enter: 'center top', leave: 'center bottom', sync: 0.4 }),
+    })
+  }
+
+  /* ---- Consulta: progress fills per answer; the next step lights. --- */
+  const form = document.querySelector('[data-quote]')
+  if (form) {
+    const steps = [...form.querySelectorAll('[data-step]')]
+    const fills = [...form.querySelectorAll('[data-progress]')]
+    form.addEventListener('submit', (e) => e.preventDefault())
+    form.addEventListener('change', () => {
+      const answered = steps.map((s) => !!s.querySelector('input:checked'))
+      const firstOpen = answered.indexOf(false)
+      steps.forEach((s, i) => {
+        s.dataset.state = answered[i] ? 'done' : i === firstOpen ? 'active' : ''
+      })
+      fills.forEach((fill, i) => {
+        const to = answered[i] ? 1 : 0
+        if (reduce) fill.style.setProperty('--progress', to)
+        else animate(fill, { scaleX: to, duration: ms('--motion-base'), ease: 'out(3)' })
+      })
+    })
+  }
+
+  /* ---- Installs carousel: drag or swipe; advances on its own while in
+     view and untouched. --------------------------------------------- */
+  const track = document.querySelector('[data-track]')
+  if (track) {
+    let held = false
+    let visible = false
+    let startX = 0
+    let startLeft = 0
+    track.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse') return
+      held = true
+      startX = e.clientX
+      startLeft = track.scrollLeft
+      track.dataset.drag = ''
+      track.dataset.free = ''
+      track.setPointerCapture(e.pointerId)
+    })
+    track.addEventListener('pointermove', (e) => {
+      if (track.dataset.drag === undefined) return
+      track.scrollLeft = startLeft - (e.clientX - startX)
+    })
+    const release = () => {
+      delete track.dataset.drag
+      delete track.dataset.free
+      held = false
+    }
+    track.addEventListener('pointerup', release)
+    track.addEventListener('pointercancel', release)
+    track.addEventListener('mouseenter', () => (held = true))
+    track.addEventListener('mouseleave', () => (held = false))
+    track.addEventListener('focusin', () => (held = true))
+    track.addEventListener('focusout', () => (held = false))
+    new IntersectionObserver(([entry]) => (visible = entry.isIntersecting), { threshold: 0.4 }).observe(track)
+
+    if (!reduce) {
+      setInterval(() => {
+        if (held || !visible || document.hidden) return
+        const slides = [...track.children]
+        const step = slides[1].offsetLeft - slides[0].offsetLeft
+        const max = track.scrollWidth - track.clientWidth
+        const to = track.scrollLeft + step > max + 2 ? 0 : Math.min(track.scrollLeft + step, max)
+        const pos = { x: track.scrollLeft }
+        track.dataset.free = ''
+        animate(pos, {
+          x: to,
+          duration: ms('--motion-slide'),
+          ease: 'inOutQuart',
+          onUpdate: () => (track.scrollLeft = pos.x),
+          onComplete: () => delete track.dataset.free,
+        })
+      }, ms('--motion-dwell'))
+    }
+  }
+</script>
+</body>
+</html>

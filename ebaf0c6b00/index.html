@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<title>Cortinados para vos — propuestas</title>
+<style>
+  :root {
+    --bar: 48px;
+    --ground: #1f1f1f;
+    --chrome: #141414;
+    --line: #3a3a3a;
+    --ink: #f2f2f2;
+    --ink-dim: #a8a8a8;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; overflow: hidden; background: var(--ground); }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    color: var(--ink);
+    font: 14px/1.2 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .bar {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: 12px;
+    height: var(--bar);
+    padding: 0 12px;
+    background: var(--chrome);
+    border-bottom: 1px solid var(--line);
+  }
+  .title {
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    color: var(--ink-dim);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .pick { flex: 0 1 320px; min-width: 0; }
+  select {
+    width: 100%;
+    height: 34px;
+    padding: 0 8px;
+    color: var(--ink);
+    font: inherit;
+    background: var(--ground);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+  .controls { display: flex; flex: none; align-items: center; gap: 8px; margin-left: auto; }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    min-width: 34px;
+    padding: 0 10px;
+    color: var(--ink-dim);
+    font: inherit;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover { color: var(--ink); }
+  select:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .refresh { padding: 0; }
+  .devices { display: flex; }
+  .devices[hidden] { display: none; }
+  .devices button { border-radius: 0; margin-left: -1px; }
+  .devices button:first-child { margin-left: 0; border-radius: 6px 0 0 6px; }
+  .devices button:last-child { border-radius: 0 6px 6px 0; }
+  .devices button[hidden] { display: none; }
+  .devices button[aria-pressed="true"] { color: var(--chrome); background: var(--ink); border-color: var(--ink); }
+  .stage {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .frame { position: relative; flex: none; overflow: hidden; background: #fff; }
+  .frame.fill { width: 100%; height: 100%; }
+  iframe { position: absolute; top: 0; left: 0; display: block; border: 0; background: #fff; transform-origin: top left; }
+  .fill iframe { width: 100%; height: 100%; }
+  @media (max-width: 719px) { .title { display: none; } .pick { flex: 1 1 auto; } }
+</style>
+</head>
+<body>
+<header class="bar">
+  <span class="title">Cortinados para vos — propuestas</span>
+  <div class="pick"><select id="design"></select></div>
+  <div class="controls">
+    <button id="refresh" class="refresh" type="button">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4L21 8"/><path d="M21 3v5h-5"/></svg>
+    </button>
+    <div id="devices" class="devices" role="group"></div>
+  </div>
+</header>
+<main id="stage" class="stage"></main>
+<script>
+(function () {
+  var manifest = {"title":"Cortinados para vos — propuestas","strings":{"design":"Diseño","refresh":"Volver a cargar","devices":"Tamaño de pantalla","mobile":"Celular","tablet":"Tablet","desktop":"Escritorio","unavailable":"Disponible en el sitio final"},"groups":[{"label":"Hogares","entries":[{"slug":"la-luz","label":"Hogar premium — La luz","hash":"27367143689d"},{"slug":"motorizadas","label":"Hogar premium — Motorizadas","hash":"4173e0a735ad"},{"slug":"la-ventana","label":"Hogar práctico — Roller","hash":"12f854c7e064"},{"slug":"toda-la-casa","label":"Mudanza u obra — Toda la casa","hash":"dd68563a43bc"},{"slug":"que-cortina","label":"Mudanza u obra — Qué cortina","hash":"bd9796bb43a6"},{"slug":"zona-norte","label":"Zona Norte y CABA","hash":"8552b48f1b94"}]},{"label":"Empresas","entries":[{"slug":"empresas","label":"Empresas y oficinas","hash":"4dbde1558aaa"},{"slug":"hoteles","label":"Hoteles y alquileres","hash":"f71557a046d7"}]}],"devices":[{"id":"mobile","width":412,"height":915},{"id":"tablet","width":800,"height":1280},{"id":"desktop"}]};
+  /* Below this the window is a phone: there is nothing to preview a device in. */
+  var CONTROL_MIN_WIDTH = 600;
+  var words = manifest.strings;
+  var design = document.getElementById('design');
+  var devices = document.getElementById('devices');
+  var refresh = document.getElementById('refresh');
+  var stage = document.getElementById('stage');
+  var entries = [];
+  var buttons = {};
+  var mounted = null;
+
+  manifest.groups.forEach(function (group) {
+    var optgroup = document.createElement('optgroup');
+    optgroup.label = group.label;
+    group.entries.forEach(function (entry) {
+      var option = document.createElement('option');
+      option.value = entry.slug;
+      option.textContent = entry.label;
+      optgroup.appendChild(option);
+      entries.push(entry);
+    });
+    design.appendChild(optgroup);
+  });
+  design.setAttribute('aria-label', words.design);
+  refresh.setAttribute('aria-label', words.refresh);
+  refresh.title = words.refresh;
+  devices.setAttribute('aria-label', words.devices);
+
+  manifest.devices.forEach(function (device) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = words[device.id];
+    button.addEventListener('click', function () { go(current().entry.slug, device.id); });
+    devices.appendChild(button);
+    buttons[device.id] = button;
+  });
+
+  function deviceById(id) {
+    return manifest.devices.filter(function (d) { return d.id === id; })[0];
+  }
+
+  /* Fill has no size, so only a sized device can be wider than the window. */
+  function fits(device) {
+    return window.innerWidth >= CONTROL_MIN_WIDTH && (!device.width || window.innerWidth > device.width);
+  }
+
+  function current() {
+    var parts = location.hash.slice(1).split('/');
+    var entry = entries.filter(function (e) { return e.slug === parts[0]; })[0] || entries[0];
+    var device = deviceById(parts[1]);
+    if (!device || !fits(device)) device = deviceById('desktop');
+    return { entry: entry, device: device };
+  }
+
+  function go(slug, deviceId) {
+    var hash = '#' + slug + '/' + deviceId;
+    if (location.hash === hash) mount();
+    else location.hash = hash;
+  }
+
+  function paintControls(device) {
+    devices.hidden = window.innerWidth < CONTROL_MIN_WIDTH;
+    manifest.devices.forEach(function (d) {
+      buttons[d.id].hidden = !fits(d);
+      buttons[d.id].setAttribute('aria-pressed', String(d.id === device.id));
+    });
+  }
+
+  /* The scale rule is `fitScale` in src/lib/devices.ts. There is no build step here to import it. */
+  function fit() {
+    if (!mounted || !mounted.device.width) return;
+    var device = mounted.device;
+    var box = stage.getBoundingClientRect();
+    var scale = Math.min(1, box.width / device.width, box.height / device.height);
+    mounted.wrap.style.width = device.width * scale + 'px';
+    mounted.wrap.style.height = device.height * scale + 'px';
+    mounted.frame.style.width = device.width + 'px';
+    mounted.frame.style.height = device.height + 'px';
+    mounted.frame.style.transform = 'scale(' + scale + ')';
+  }
+
+  /* A fresh iframe every time: it replays the design's load animation, stays out
+     of session history, and a design that reads its width once at load sees the
+     device it is being shown at. */
+  function mount() {
+    var state = current();
+    var wrap = document.createElement('div');
+    var frame = document.createElement('iframe');
+    wrap.className = state.device.width ? 'frame' : 'frame fill';
+    frame.title = state.entry.label;
+    frame.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+    frame.src = './' + state.entry.slug + '/index.html?v=' + state.entry.hash;
+    wrap.appendChild(frame);
+    stage.replaceChildren(wrap);
+    mounted = { slug: state.entry.slug, device: state.device, wrap: wrap, frame: frame };
+    design.value = state.entry.slug;
+    document.title = state.entry.label + ' · ' + manifest.title;
+    paintControls(state.device);
+    fit();
+  }
+
+  design.addEventListener('change', function () { go(design.value, current().device.id); });
+  refresh.addEventListener('click', mount);
+  window.addEventListener('hashchange', mount);
+
+  new ResizeObserver(function () {
+    var state = current();
+    if (mounted && state.device.id !== mounted.device.id) return mount();
+    paintControls(state.device);
+    fit();
+  }).observe(stage);
+
+  mount();
+})();
+</script>
+</body>
+</html>

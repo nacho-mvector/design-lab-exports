@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es-AR" class="bg-bg font-body text-ink">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Cortinas para hoteles y alquileres — Cortinados para vos</title>
+    <meta name="description" content="Blackout, doble cortinado y telas resistentes para hoteles, cabañas, apart hoteles y alquileres temporarios, con instalación coordinada y posventa. CABA y provincia de Buenos Aires.">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./build.css">
+  <meta name="robots" content="noindex">
+<script>
+/* A route this preview does not have stops here and says so. */
+(function () {
+  var note = null, timer = 0;
+  document.addEventListener('click', function (event) {
+    var link = event.target && event.target.closest && event.target.closest('a[href^="/"]');
+    if (!link || link.getAttribute('href').indexOf('//') === 0) return;
+    event.preventDefault();
+    if (!note) {
+      note = document.createElement('div');
+      note.setAttribute('role', 'status');
+      note.setAttribute('data-showcase-note', '');
+      note.textContent = "Disponible en el sitio final";
+      note.style.cssText = 'position:fixed;left:50%;bottom:24px;z-index:2147483647;transform:translateX(-50%);max-width:calc(100vw - 32px);padding:10px 14px;border-radius:8px;background:#141414;color:#f2f2f2;font:14px/1.3 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.3);pointer-events:none';
+      document.body.appendChild(note);
+    }
+    note.hidden = false;
+    clearTimeout(timer);
+    timer = setTimeout(function () { note.hidden = true; }, 2400);
+  }, true);
+})();
+</script>
+</head>
+  <body class="bg-bg text-body text-ink">
+    <!-- Letterbox band: three anchors, the stacked name in the middle. -->
+    <header data-block="nav" class="bg-bg px-gutter py-nav">
+      <nav aria-label="Principal" class="mx-auto grid max-w-page grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <a href="./" aria-current="page" class="justify-self-start text-caps font-label tracking-caps text-ink uppercase transition-colors hover:text-accent">Hotelería</a>
+        <a href="./" class="flex flex-col items-center text-center text-ink transition-colors hover:text-accent">
+          <span class="font-display text-wordmark">Cortinados</span>
+          <span class="mt-1 text-micro font-label tracking-wordmark uppercase">para vos</span>
+        </a>
+        <a href="/consulta/hoteles" class="justify-self-end text-caps font-label tracking-caps text-ink uppercase transition-colors hover:text-accent">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero: one still of a room at night. -->
+      <section data-block="hero" aria-labelledby="hero-title" class="relative isolate flex min-h-svh flex-col overflow-hidden bg-bg lg:block lg:aspect-[3/2] lg:min-h-0">
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <img data-hero-image src="./assets/hero-noche.webp" width="1536" height="1024" alt="Habitación de hotel en penumbra, doble cortinado cerrado y una lámpara encendida" fetchpriority="high" decoding="async" class="hero-photo absolute inset-0 size-full object-cover motion-safe:animate-slow-zoom">
+          <div aria-hidden="true" class="hero-veil absolute inset-0"></div>
+        </div>
+
+        <div class="relative mx-auto flex w-full max-w-page flex-1 flex-col px-gutter pt-hero-top pb-hero-foot lg:h-full lg:pb-hero-low">
+          <h1 id="hero-title" class="font-display text-display text-ink">
+            <span class="block">Habitaciones</span>
+            <span class="block ps-stagger">que <em class="text-accent-lit italic">se apagan</em> cuando</span>
+            <span class="block ps-stagger-2">el huésped quiere dormir.</span>
+          </h1>
+
+          <div class="mt-band ml-auto w-[88%] max-w-sub lg:mt-auto lg:w-full">
+            <p class="text-lead text-ink">Blackout, doble cortinado y telas pensadas para el uso diario de un hotel. Coordinamos la instalación con el hotel y te seguimos acompañando después de la entrega.</p>
+            <div class="mt-stack flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href="/consulta/hoteles" class="inline-flex items-center rounded-action bg-accent px-6 py-4 text-small font-action text-on-accent transition-colors hover:bg-accent-hover">Pedí un relevamiento</a>
+            </div>
+          </div>
+
+          <p class="mt-band text-small font-label text-ink-dim lg:absolute lg:bottom-hero-low lg:left-gutter lg:mt-0 lg:max-w-copy">Hoteles, cabañas, apart hoteles y alquileres temporarios</p>
+        </div>
+      </section>
+
+      <!-- Works: a masonry of six hotel photographs, straight after the hero. -->
+      <section data-block="proof" aria-labelledby="trabajos-title" class="bg-bg px-gutter pt-band pb-section">
+        <div class="mx-auto max-w-page">
+          <div class="grid gap-4 lg:grid-cols-12 lg:items-end lg:gap-x-8">
+            <h2 id="trabajos-title" data-reveal class="max-w-title font-display text-section text-balance text-ink lg:col-span-7">Trabajos en hotelería</h2>
+            <p class="text-lead text-ink-dim lg:col-span-4 lg:col-start-9 lg:pb-2">Ya hicimos trabajos para hoteles.</p>
+          </div>
+
+          <div class="mt-band grid grid-cols-2 gap-x-3 gap-y-6 pb-tile-drop lg:grid-cols-12 lg:gap-x-8 lg:gap-y-band lg:pb-0">
+            <figure class="lg:col-span-5">
+              <div data-reveal="open" data-reveal-delay="0" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-1.webp" width="1536" height="1024" alt="Habitación de hotel con doble cortinado" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Habitación de hotel con doble cortinado</figcaption>
+            </figure>
+            <figure class="translate-y-[var(--spacing-tile-drop)] lg:col-span-4 lg:translate-y-0 lg:pt-tile-step">
+              <div data-reveal="open" data-reveal-delay="120" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-2.webp" width="1536" height="1024" alt="Habitación con roller blackout bajo" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Habitación con roller blackout bajo</figcaption>
+            </figure>
+            <figure class="lg:col-span-3 lg:pt-tile-step-2">
+              <div data-reveal="open" data-reveal-delay="240" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-3.webp" width="1536" height="1024" alt="Lobby con cortinas de tela de piso a techo" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Lobby con cortinas de tela de piso a techo</figcaption>
+            </figure>
+            <figure class="translate-y-[var(--spacing-tile-drop)] lg:col-span-5 lg:translate-y-0">
+              <div data-reveal="open" data-reveal-delay="0" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-4.webp" width="900" height="600" alt="Detalle de un riel y la caída de una cortina" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Detalle de un riel y la caída de una cortina</figcaption>
+            </figure>
+            <figure class="lg:col-span-4 lg:pt-tile-step">
+              <div data-reveal="open" data-reveal-delay="120" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-5.webp" width="1536" height="1024" alt="Habitación doble con cortinas abiertas a la mañana" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Habitación doble con cortinas abiertas a la mañana</figcaption>
+            </figure>
+            <figure class="translate-y-[var(--spacing-tile-drop)] lg:col-span-3 lg:translate-y-0 lg:pt-tile-step-2">
+              <div data-reveal="open" data-reveal-delay="240" class="relative aspect-[3/2] overflow-hidden rounded-plate">
+                <img data-photo="hoteleria" src="./assets/photo-hoteleria-6.webp" width="1536" height="1024" alt="Restaurante de hotel con cortinas de tela" loading="lazy" decoding="async" class="size-full object-cover">
+              </div>
+              <figcaption class="mt-3 text-small text-ink-dim">Restaurante de hotel con cortinas de tela</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- What a hotel room asks for: the window that does not leak. -->
+      <section data-block="editorial" aria-labelledby="pide-title" class="bg-bg px-gutter py-section">
+        <div class="mx-auto grid max-w-page gap-band lg:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="order-last lg:order-first lg:col-span-5">
+            <svg viewBox="0 0 300 400" aria-hidden="true" class="drawing-window hairline mx-auto block w-full max-w-window-sm fill-none stroke-ink-dim lg:max-w-window">
+              <rect x="30" y="40" width="240" height="330" class="stroke-line-strong"/>
+              <rect x="40" y="50" width="220" height="310" class="stroke-line-strong"/>
+              <path d="M150 50 V360 M40 150 H260" class="stroke-line-strong"/>
+              <rect x="212" y="50" width="48" height="310" class="leak-glow fill-lamp stroke-none"/>
+              <g class="leak-rays stroke-lamp">
+                <path d="M272 96 L296 84 M272 150 L298 150 M272 204 L296 216 M272 258 L294 276 M272 312 L290 336" stroke-dasharray="3 4"/>
+              </g>
+              <g class="leak-panel">
+                <rect x="150" y="34" width="110" height="330" class="fill-bg"/>
+                <path d="M161 36 V364 M172 36 V364 M183 36 V364 M194 36 V364 M205 36 V364 M216 36 V364 M227 36 V364 M238 36 V364 M249 36 V364" class="stroke-line-strong"/>
+              </g>
+              <g>
+                <rect x="40" y="34" width="110" height="330" class="fill-bg"/>
+                <path d="M51 36 V364 M62 36 V364 M73 36 V364 M84 36 V364 M95 36 V364 M106 36 V364 M117 36 V364 M128 36 V364 M139 36 V364" class="stroke-line-strong"/>
+              </g>
+              <path d="M236 50 V360" class="leak-ghost stroke-lamp" stroke-dasharray="2 5"/>
+              <path d="M16 30 C24 120 14 260 22 368 L42 368 C36 260 44 120 40 30 Z M24 60 C28 140 22 260 28 360 M32 60 C35 150 30 260 34 360" class="fill-bg"/>
+              <path d="M284 30 C276 120 286 260 278 368 L262 368 C266 260 258 120 264 30 Z M276 60 C272 140 278 260 272 360 M269 60 C267 150 271 260 268 360" class="fill-bg"/>
+              <path d="M10 30 H290"/>
+              <circle cx="10" cy="30" r="3" class="fill-bg"/>
+              <circle cx="290" cy="30" r="3" class="fill-bg"/>
+            </svg>
+          </div>
+          <div class="lg:col-span-6 lg:col-start-7">
+            <h2 id="pide-title" data-reveal class="max-w-title font-display text-section text-balance text-ink">Lo que pide una habitación de hotel</h2>
+            <dl class="mt-band">
+              <div class="grid gap-2 border-t border-line py-stack md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-8">
+                <dt class="font-display text-title text-ink">Oscuridad</dt>
+                <dd class="text-body text-ink-dim">Que entre luz por un costado es una queja en la reseña.</dd>
+              </div>
+              <div class="grid gap-2 border-t border-line py-stack md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-8">
+                <dt class="font-display text-title text-ink">Uso diario</dt>
+                <dd class="text-body text-ink-dim">Telas y sistemas que aguantan abrirse y cerrarse todos los días.</dd>
+              </div>
+              <div class="grid gap-2 border-t border-b border-line py-stack md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-8">
+                <dt class="font-display text-title text-ink">Una misma terminación</dt>
+                <dd class="text-body text-ink-dim">Todas las habitaciones de un tipo, iguales.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- The four systems, each drawn rather than described. -->
+      <section data-block="product" aria-labelledby="soluciones-title" class="border-t border-line bg-bg px-gutter py-section">
+        <div class="mx-auto grid max-w-page gap-band lg:grid-cols-12 lg:gap-x-8">
+          <div class="lg:col-span-4">
+            <h2 id="soluciones-title" data-reveal class="max-w-title font-display text-section text-balance text-ink lg:sticky lg:top-band">Soluciones para hotelería</h2>
+          </div>
+          <ul class="lg:col-span-7 lg:col-start-6">
+            <li class="grid items-center gap-6 border-t border-line py-band md:grid-cols-[var(--spacing-diagram)_minmax(0,1fr)] md:gap-12">
+              <svg viewBox="0 0 240 240" aria-hidden="true" class="hairline size-diagram fill-none stroke-ink-dim">
+                <rect x="40" y="44" width="160" height="168" class="stroke-line-strong"/><path d="M120 44 V212 M40 112 H200" class="stroke-line-strong"/>
+                <path d="M14 26 H226 M14 34 H226"/>
+                <rect x="40" y="34" width="160" height="190" class="fill-bg"/>
+                <path d="M52 34 V224 M64 34 V224 M76 34 V224 M88 34 V224 M100 34 V224 M112 34 V224 M124 34 V224 M136 34 V224 M148 34 V224 M160 34 V224 M172 34 V224 M184 34 V224 M196 34 V224" class="stroke-line-strong"/>
+                <path d="M18 26 C26 100 16 170 24 228 L64 228 C56 170 66 100 60 26 Z M30 50 C34 110 28 170 34 224 M44 50 C48 110 42 170 48 224" class="fill-bg"/>
+                <path d="M222 26 C214 100 224 170 216 228 L176 228 C184 170 174 100 180 26 Z M210 50 C206 110 212 170 206 224 M196 50 C192 110 198 170 192 224" class="fill-bg"/>
+                <path d="M8 228 H232" class="stroke-line-strong"/>
+              </svg>
+              <div>
+                <h3 class="font-display text-title text-ink">Doble cortinado</h3>
+                <p class="mt-2 text-body text-ink-dim">Tela decorativa y blackout textil en la misma ventana.</p>
+              </div>
+            </li>
+            <li class="grid items-center gap-6 border-t border-line py-band md:grid-cols-[var(--spacing-diagram)_minmax(0,1fr)] md:gap-12">
+              <svg viewBox="0 0 240 240" aria-hidden="true" class="hairline size-diagram fill-none stroke-ink-dim">
+                <rect x="40" y="44" width="160" height="168" class="stroke-line-strong"/><path d="M120 44 V212 M40 112 H200" class="stroke-line-strong"/>
+                <rect x="36" y="30" width="168" height="14" rx="7" class="fill-bg"/>
+                <rect x="42" y="44" width="156" height="120" class="fill-bg"/>
+                <path d="M42 84 H198 M42 124 H198" class="stroke-line-strong"/>
+                <rect x="42" y="164" width="156" height="6" class="fill-bg"/>
+                <path d="M210 44 V150 M216 44 V140" stroke-dasharray="2 4"/>
+                <path d="M210 150 C210 158 216 158 216 140"/>
+              </svg>
+              <div>
+                <h3 class="font-display text-title text-ink">Roller blackout o roller doble</h3>
+                <p class="mt-2 text-body text-ink-dim">Oscuridad total, o blackout y screen en la misma ventana.</p>
+              </div>
+            </li>
+            <li class="grid items-center gap-6 border-t border-line py-band md:grid-cols-[var(--spacing-diagram)_minmax(0,1fr)] md:gap-12">
+              <svg viewBox="0 0 240 240" aria-hidden="true" class="hairline size-diagram fill-none stroke-ink-dim">
+                <path d="M70 44 H170 V200 H70 Z M120 44 V200" class="stroke-line-strong"/>
+                <path d="M6 22 H234"/>
+                <circle cx="6" cy="22" r="3" class="fill-bg"/>
+                <circle cx="234" cy="22" r="3" class="fill-bg"/>
+                <path d="M12 22 C20 90 8 160 16 230 L98 230 C92 160 102 90 96 22 Z" class="fill-bg"/>
+                <path d="M26 30 C32 90 22 160 28 226 M40 30 C46 90 36 160 42 226 M54 30 C60 90 50 160 56 226 M68 30 C74 90 64 160 70 226 M82 30 C86 90 80 160 84 226"/>
+                <path d="M228 22 C220 90 232 160 224 230 L142 230 C148 160 138 90 144 22 Z" class="fill-bg"/>
+                <path d="M214 30 C208 90 218 160 212 226 M200 30 C194 90 204 160 198 226 M186 30 C180 90 190 160 184 226 M172 30 C166 90 176 160 170 226 M158 30 C154 90 160 160 156 226"/>
+                <path d="M2 232 H238" class="stroke-line-strong"/>
+              </svg>
+              <div>
+                <h3 class="font-display text-title text-ink">Cortinas de tela</h3>
+                <p class="mt-2 text-body text-ink-dim">Para lobbies, restaurantes y espacios comunes.</p>
+              </div>
+            </li>
+            <li class="grid items-center gap-6 border-t border-b border-line py-band md:grid-cols-[var(--spacing-diagram)_minmax(0,1fr)] md:gap-12">
+              <svg viewBox="0 0 240 240" aria-hidden="true" class="hairline size-diagram fill-none stroke-ink-dim">
+                <rect x="12" y="40" width="186" height="10" class="fill-bg"/>
+                <path d="M26 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M42 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M58 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M74 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M90 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M106 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M122 50 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0"/>
+                <path d="M26 54 C30 100 22 140 26 186 M42 54 C46 100 38 140 42 186 M58 54 C62 100 54 140 58 186 M74 54 C78 100 70 140 74 186 M90 54 C94 100 86 140 90 186 M106 54 C110 100 102 140 106 186 M122 54 C126 100 118 140 122 186" class="stroke-line-strong"/>
+                <rect x="198" y="34" width="30" height="22" class="fill-bg"/>
+                <path d="M213 56 V150"/>
+                <rect x="196" y="150" width="34" height="46"/>
+                <path d="M213 158 V188" class="stroke-line-strong"/>
+                <rect x="150" y="142" width="26" height="62" rx="5"/>
+                <circle cx="163" cy="158" r="4"/>
+                <circle cx="163" cy="176" r="4"/>
+                <path d="M2 216 H238" class="stroke-line-strong"/>
+              </svg>
+              <div>
+                <h3 class="font-display text-title text-ink">Rieles rectos o curvos y motorización</h3>
+                <p class="mt-2 text-body text-ink-dim">Para ventanales curvos o en ángulo, el riel o el barral sigue la forma del ventanal. Motor con control o tecla donde suma.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- The practical blocks, read in daylight: the linen band. -->
+      <section data-block="process" aria-labelledby="proceso-title" class="on-light bg-light px-gutter py-section text-ink-on-light">
+        <div class="mx-auto grid max-w-page gap-band lg:grid-cols-12 lg:gap-x-8">
+          <div class="lg:col-span-5">
+            <h2 id="proceso-title" data-reveal class="max-w-title font-display text-section text-balance">Cómo trabajamos con un hotel</h2>
+            <svg viewBox="0 0 300 360" aria-hidden="true" class="elevation hairline mt-band block w-full max-w-elevation-sm fill-none stroke-ink-on-light md:max-w-elevation">
+              <path d="M6 14 H294 V26 H6 Z M14 30 H286"/>
+              <rect x="16" y="30" width="268" height="314"/>
+              <path d="M16 100 H284 M16 154 H284 M16 208 H284 M16 262 H284" class="stroke-line-on-light"/>
+              <g class="floors">
+                <g class="floor"><g class="room"><rect x="36" y="54" width="30" height="36" class="pane"/><path d="M43 54 V90 M51 54 V90 M59 54 V90" class="drape"/><path d="M33 92 H69"/></g><g class="room"><rect x="84" y="54" width="30" height="36" class="pane"/><path d="M91 54 V90 M99 54 V90 M107 54 V90" class="drape"/><path d="M81 92 H117"/></g><g class="room"><rect x="132" y="54" width="30" height="36" class="pane"/><path d="M139 54 V90 M147 54 V90 M155 54 V90" class="drape"/><path d="M129 92 H165"/></g><g class="room"><rect x="180" y="54" width="30" height="36" class="pane"/><path d="M187 54 V90 M195 54 V90 M203 54 V90" class="drape"/><path d="M177 92 H213"/></g><g class="room"><rect x="228" y="54" width="30" height="36" class="pane"/><path d="M235 54 V90 M243 54 V90 M251 54 V90" class="drape"/><path d="M225 92 H261"/></g></g>
+                <g class="floor"><g class="room"><rect x="36" y="108" width="30" height="36" class="pane"/><path d="M43 108 V144 M51 108 V144 M59 108 V144" class="drape"/><path d="M33 146 H69"/></g><g class="room"><rect x="84" y="108" width="30" height="36" class="pane"/><path d="M91 108 V144 M99 108 V144 M107 108 V144" class="drape"/><path d="M81 146 H117"/></g><g class="room"><rect x="132" y="108" width="30" height="36" class="pane"/><path d="M139 108 V144 M147 108 V144 M155 108 V144" class="drape"/><path d="M129 146 H165"/></g><g class="room"><rect x="180" y="108" width="30" height="36" class="pane"/><path d="M187 108 V144 M195 108 V144 M203 108 V144" class="drape"/><path d="M177 146 H213"/></g><g class="room"><rect x="228" y="108" width="30" height="36" class="pane"/><path d="M235 108 V144 M243 108 V144 M251 108 V144" class="drape"/><path d="M225 146 H261"/></g></g>
+                <g class="floor"><g class="room"><rect x="36" y="162" width="30" height="36" class="pane"/><path d="M43 162 V198 M51 162 V198 M59 162 V198" class="drape"/><path d="M33 200 H69"/></g><g class="room"><rect x="84" y="162" width="30" height="36" class="pane"/><path d="M91 162 V198 M99 162 V198 M107 162 V198" class="drape"/><path d="M81 200 H117"/></g><g class="room"><rect x="132" y="162" width="30" height="36" class="pane"/><path d="M139 162 V198 M147 162 V198 M155 162 V198" class="drape"/><path d="M129 200 H165"/></g><g class="room"><rect x="180" y="162" width="30" height="36" class="pane"/><path d="M187 162 V198 M195 162 V198 M203 162 V198" class="drape"/><path d="M177 200 H213"/></g><g class="room"><rect x="228" y="162" width="30" height="36" class="pane"/><path d="M235 162 V198 M243 162 V198 M251 162 V198" class="drape"/><path d="M225 200 H261"/></g></g>
+                <g class="floor"><g class="room"><rect x="36" y="216" width="30" height="36" class="pane"/><path d="M43 216 V252 M51 216 V252 M59 216 V252" class="drape"/><path d="M33 254 H69"/></g><g class="room"><rect x="84" y="216" width="30" height="36" class="pane"/><path d="M91 216 V252 M99 216 V252 M107 216 V252" class="drape"/><path d="M81 254 H117"/></g><g class="room"><rect x="132" y="216" width="30" height="36" class="pane"/><path d="M139 216 V252 M147 216 V252 M155 216 V252" class="drape"/><path d="M129 254 H165"/></g><g class="room"><rect x="180" y="216" width="30" height="36" class="pane"/><path d="M187 216 V252 M195 216 V252 M203 216 V252" class="drape"/><path d="M177 254 H213"/></g><g class="room"><rect x="228" y="216" width="30" height="36" class="pane"/><path d="M235 216 V252 M243 216 V252 M251 216 V252" class="drape"/><path d="M225 254 H261"/></g></g>
+              </g>
+              <path d="M104 282 H196"/>
+              <rect x="126" y="288" width="48" height="56"/>
+              <path d="M150 288 V344"/>
+              <rect x="36" y="292" width="70" height="40"/>
+              <rect x="194" y="292" width="70" height="40"/>
+              <path d="M0 344 H300 M0 348 H300"/>
+            </svg>
+          </div>
+          <ol class="lg:col-span-6 lg:col-start-7 lg:self-end">
+            <li class="grid grid-cols-[var(--spacing-numeral)_minmax(0,1fr)] items-baseline gap-6 border-t border-line-on-light py-stack">
+              <span class="font-display text-numeral text-ink-on-light">01</span>
+              <div>
+                <h3 class="font-display text-title">Relevamiento</h3>
+                <p class="mt-1 text-body text-ink-on-light-dim">Por tipo de habitación y por espacio común, con asesoramiento.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[var(--spacing-numeral)_minmax(0,1fr)] items-baseline gap-6 border-t border-line-on-light py-stack">
+              <span class="font-display text-numeral text-ink-on-light">02</span>
+              <div>
+                <h3 class="font-display text-title">Muestrario</h3>
+                <p class="mt-1 text-body text-ink-on-light-dim">Telas y sistemas por tipo de habitación, antes de presupuestar.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[var(--spacing-numeral)_minmax(0,1fr)] items-baseline gap-6 border-t border-line-on-light py-stack">
+              <span class="font-display text-numeral text-ink-on-light">03</span>
+              <div>
+                <h3 class="font-display text-title">Instalación coordinada</h3>
+                <p class="mt-1 text-body text-ink-on-light-dim">Con el hotel, según la ocupación.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[var(--spacing-numeral)_minmax(0,1fr)] items-baseline gap-6 border-t border-b border-line-on-light py-stack">
+              <span class="font-display text-numeral text-ink-on-light">04</span>
+              <div>
+                <h3 class="font-display text-title">Posventa</h3>
+                <p class="mt-1 text-body text-ink-on-light-dim">Te seguimos acompañando después de la entrega, con un solo contacto.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section data-block="faq" aria-labelledby="preguntas-title" class="on-light bg-light px-gutter pb-section text-ink-on-light">
+        <div class="mx-auto grid max-w-page gap-band border-t border-line-on-light pt-section lg:grid-cols-12 lg:gap-x-8">
+          <h2 id="preguntas-title" data-reveal class="max-w-title font-display text-section text-balance lg:col-span-5">Preguntas frecuentes</h2>
+          <dl class="grid gap-x-8 gap-y-band md:grid-cols-2 lg:col-span-6 lg:col-start-7 lg:grid-cols-1">
+            <div>
+              <dt class="font-display text-title">¿Pueden trabajar con el hotel abierto?</dt>
+              <dd class="mt-3 text-body text-ink-on-light-dim">Lo coordinamos con el hotel según la ocupación, y lo vemos en el relevamiento.</dd>
+            </div>
+            <div>
+              <dt class="font-display text-title">¿Pueden hacer factura?</dt>
+              <dd class="mt-3 text-body text-ink-on-light-dim">Sí, podemos hacer factura; el presupuesto va por escrito y por tipo de habitación.</dd>
+            </div>
+            <div>
+              <dt class="font-display text-title">¿Tienen fichas técnicas?</dt>
+              <dd class="mt-3 text-body text-ink-on-light-dim">Sí: te enviamos las fichas técnicas del proveedor de cada tela y sistema que proponemos.</dd>
+            </div>
+            <div>
+              <dt class="font-display text-title">¿Qué pasa después de instalar?</dt>
+              <dd class="mt-3 text-body text-ink-on-light-dim">Seguimos acompañándote después de la entrega, para asegurarnos de que todo funcione y se vea como esperabas.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- The close: back into the dark room. -->
+      <section data-block="cta" aria-labelledby="cierre-title" class="bg-bg-deep px-gutter py-section">
+        <div class="mx-auto grid max-w-page gap-band lg:grid-cols-12 lg:items-end lg:gap-x-8">
+          <h2 id="cierre-title" data-reveal class="font-display text-close text-balance text-ink lg:col-span-8">Hablemos de tus habitaciones.</h2>
+          <div class="lg:col-span-4">
+            <p class="text-lead text-ink-dim">Relevamiento y presupuesto sin cargo, en CABA y provincia de Buenos Aires.</p>
+            <div class="mt-stack flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href="/consulta/hoteles" class="inline-flex items-center rounded-action bg-accent px-6 py-4 text-small font-action text-on-accent transition-colors hover:bg-accent-hover">Pedí un relevamiento</a>
+              <a href="/consulta/llamar" class="text-small font-label text-ink underline decoration-accent underline-offset-[var(--spacing-underline)] transition-colors hover:text-accent">Llamanos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer data-block="footer" class="border-t border-line bg-bg-deep px-gutter pt-band pb-fab-foot md:pb-fab-foot-md">
+      <div class="mx-auto flex max-w-page flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <p class="max-w-copy text-small text-ink-dim">Cortinados para vos · Cortinas para hotelería, empresas y hogares · CABA y provincia de Buenos Aires</p>
+        <ul class="flex flex-wrap gap-x-8 gap-y-2 text-caps font-label tracking-caps text-ink-dim uppercase">
+          <li><a href="./" aria-current="page" class="transition-colors hover:text-accent">Hotelería</a></li>
+          <li>Trabajos</li>
+          <li><a href="/consulta/hoteles" class="transition-colors hover:text-accent">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- One tap to WhatsApp from anywhere on the page. -->
+    <a href="/consulta/whatsapp" aria-label="Escribinos por WhatsApp" class="wa-pulse fab inline-flex items-center justify-center rounded-full bg-whatsapp text-on-whatsapp transition-colors hover:bg-whatsapp-deep motion-reduce:transition-none print:hidden">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="fill-current">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+      </svg>
+    </a>
+
+    <script>
+      // Motion is an enhancement over a page that is already readable:
+      // nothing starts hidden, and with reduced motion nothing moves.
+      (() => {
+        if (!('IntersectionObserver' in window) || !Element.prototype.animate) return
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+        const root = getComputedStyle(document.documentElement)
+        const token = (name, fallback) => root.getPropertyValue(name).trim() || fallback
+        const ms = (name, fallback) => parseFloat(token(name, fallback))
+        const ease = token('--ease-film', 'ease-out')
+        const lift = token('--spacing-band', '3rem')
+
+        // Titles rise and gallery plates open like a pair of curtains, once,
+        // and only when they arrive from below.
+        const reveal = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue
+            reveal.unobserve(entry.target)
+            if (entry.boundingClientRect.top < innerHeight * 0.6) continue
+            const el = entry.target
+            const open = el.dataset.reveal === 'open'
+            el.animate(
+              open
+                ? [{ clipPath: 'inset(0 50% 0 50%)' }, { clipPath: 'inset(0 0% 0 0%)' }]
+                : [{ opacity: 0, transform: `translateY(calc(${lift} * 0.5))` }, { opacity: 1, transform: 'none' }],
+              { duration: ms(open ? '--duration-open' : '--duration-reveal', 1200), delay: Number(el.dataset.revealDelay || 0), easing: ease, fill: 'backwards' },
+            )
+          }
+        }, { threshold: 0 })
+        document.querySelectorAll('[data-reveal]').forEach((el) => reveal.observe(el))
+
+        // The window, scrubbed by scroll rather than timed: as the drawing
+        // comes up the screen the light shows down the open side and holds,
+        // then the blackout panel is drawn across to the jamb. Scrolling back
+        // opens it again; past the end it is the resting state the CSS draws.
+        const win = document.querySelector('.drawing-window')
+        if (win) {
+          const vars = getComputedStyle(win)
+          const num = (name, fallback) => {
+            const v = parseFloat(vars.getPropertyValue(name))
+            return Number.isFinite(v) ? v : fallback
+          }
+          const from = num('--drawing-from', 0.92)
+          const to = num('--drawing-to', 0.4)
+          const hold = num('--drawing-hold', 0.3)
+          const curtain = vars.getPropertyValue('--drawing-ease').trim() || 'ease-in-out'
+          const open = `translateX(${token('--leak-open', '-48px')})`
+          const rest = getComputedStyle(win.querySelector('.leak-rays')).opacity
+          const span = 1000
+          const scrub = [
+            ['.leak-panel', [{ transform: open }, { transform: open, offset: hold, easing: curtain }, { transform: 'translateX(0)' }]],
+            ['.leak-glow', [{ opacity: 1 }, { opacity: 1, offset: (1 + hold) / 2, easing: curtain }, { opacity: 0 }]],
+            ['.leak-rays', [{ opacity: 1 }, { opacity: 1, offset: hold, easing: curtain }, { opacity: rest }]],
+          ].map(([sel, frames]) => {
+            const a = win.querySelector(sel).animate(frames, { duration: span, fill: 'both' })
+            a.pause()
+            return a
+          })
+          let queued = false
+          const update = () => {
+            queued = false
+            const box = win.getBoundingClientRect()
+            const start = innerHeight * from
+            const end = innerHeight * to - box.height / 2
+            const p = Math.min(1, Math.max(0, (start - box.top) / (start - end)))
+            for (const a of scrub) a.currentTime = p * span
+          }
+          const queue = () => {
+            if (queued) return
+            queued = true
+            requestAnimationFrame(update)
+          }
+          addEventListener('scroll', queue, { passive: true })
+          addEventListener('resize', queue)
+          update()
+        }
+
+        // The hotel: rooms go dark floor by floor, from the ground up.
+        const lit = token('--color-room-lit', 'transparent')
+        const dark = token('--color-room-dark', 'black')
+        const drawings = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue
+            drawings.unobserve(entry.target)
+            const el = entry.target
+            el.dataset.played = 'true'
+            const step = ms('--duration-step', 420)
+            const floors = [...el.querySelectorAll('.floor')].reverse()
+            floors.forEach((floor, i) => {
+              const timing = { duration: step * 2, delay: step * (i + 1), easing: ease, fill: 'both' }
+              for (const room of floor.querySelectorAll('.room')) {
+                room.querySelector('.pane').animate([{ fill: lit }, { fill: dark }], timing)
+                room.querySelector('.drape').animate([{ opacity: 0 }, { opacity: 1 }], timing)
+              }
+            })
+          }
+        }, { threshold: 0.4 })
+        document.querySelectorAll('.elevation').forEach((el) => drawings.observe(el))
+      })()
+    </script>
+  </body>
+</html>
